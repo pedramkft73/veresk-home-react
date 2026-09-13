@@ -1,0 +1,32 @@
+[
+  {
+    "img": "/assets/images/inner/case-thumb.png",   
+    "title": "Software Management",
+    "category": "Marketing"
+  },
+  {
+    "img": "/assets/images/inner/case-thumb2.png",   
+    "title": "Web Development",
+    "category": "Software"
+  },
+  {
+    "img": "/assets/images/inner/case-thumb3.png",   
+    "title": "Platform Integration",
+    "category": "Technology"
+  },
+  {
+    "img": "/assets/images/inner/case-thumb4.png",   
+    "title": "Network Security",
+    "category": "Helpdesk"
+  },  
+  {
+    "img": "/assets/images/inner/case-thumb5.png",   
+    "title": "Digital Marketing",
+    "category": "Technology"
+  },
+  {
+    "img": "/assets/images/inner/case-thumb6.png",   
+    "title": "Product & Design",
+    "category": "Software"
+  }      
+]

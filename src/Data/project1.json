@@ -1,0 +1,57 @@
+[
+  {
+    "img": "/assets/images/project1.png",   
+    "title": "Project for Marketing",
+    "desc": "Software"
+  },
+  {
+    "img": "/assets/images/project2.png",   
+    "title": "Digital Product Design",
+    "desc": "Software"
+  },
+  {
+    "img": "/assets/images/project5.png",   
+    "title": "Project for Marketing",
+    "desc": "Software"
+  },
+  {
+    "img": "/assets/images/project4.png",   
+    "title": "Digital Product Design",
+    "desc": "Software"
+  },  
+  {
+    "img": "/assets/images/project3.png",   
+    "title": "Software Development",
+    "desc": "Software"
+  },
+  {
+    "img": "/assets/images/project4.png",   
+    "title": "CMC Softwar Solution",
+    "desc": "Software"
+  },
+  {
+    "img": "/assets/images/project3.png",   
+    "title": "Software Development",
+    "desc": "Software"
+  },  
+  {
+    "img": "/assets/images/project5.png",   
+    "title": "App Development",
+    "desc": "Software"
+  },
+  {
+    "img": "/assets/images/project4.png",   
+    "title": "CMC Softwar Solution",
+    "desc": "Software"
+  },
+  {
+    "img": "/assets/images/project3.png",   
+    "title": "Software Development",
+    "desc": "Software"
+  },  
+  {
+    "img": "/assets/images/project2.png",   
+    "title": "Digital Product Design",
+    "desc": "Software"
+  }           
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "img": "/assets/images/feature1.png",   
+    "title": "Data Security",
+    "desc": "Monotonectally solutek in fermentum quis"
+  },
+  {
+    "img": "/assets/images/feature2.png",   
+    "title": "Digital Marketing",
+    "desc": "Monotonectally solutek in fermentum quis"
+  },
+  {
+    "img": "/assets/images/feature3.png",   
+    "title": "IT Consultation",
+    "desc": "Monotonectally solutek in fermentum quis"
+  },
+  {
+    "img": "/assets/images/feature4.png",   
+    "title": "Cloud Services",
+    "desc": "Monotonectally solutek in fermentum quis"
+  },  
+  {
+    "img": "/assets/images/feature5.png",   
+    "title": "Technology",
+    "desc": "Monotonectally solutek in fermentum quis"
+  }   
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "img": "/assets/images/inner/team-inner.png",  
+    "title": "Al-Amin Hossain",
+    "desc": "UI/UX DESIGNER"
+  },
+  {
+    "img": "/assets/images/inner/team-inner2.png",  
+    "title": "Kathryn Murphy",
+    "desc": "UI/UX DESIGNER"
+  },
+  {
+    "img": "/assets/images/inner/team-inner-3.png",  
+    "title": "Darlene Robertson",
+    "desc": "UI/UX DESIGNER"
+  },  
+  {
+    "img": "/assets/images/inner/team-inner4.png",  
+    "title": "Cameron William",
+    "desc": "UI/UX DESIGNER"
+  }
+]

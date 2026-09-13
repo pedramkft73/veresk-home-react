@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "IT Management",
+    "desc": "Marketing repurpose success tech sapien maximus design.",
+    "image": "/assets/images/inner/service-thumb1.png"
+  },
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "Digital Marketing",
+    "desc": "Marketing repurpose success tech sapien maximus design.",
+    "image": "/assets/images/inner/service-thumb2.png"
+  },
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "Web Development",
+    "desc": "Marketing repurpose success tech sapien maximus design.",
+    "image": "/assets/images/inner/service-thumb3.png"
+  },
+  {
+    "icon": "/assets/images/inner/service-icon.png",  
+    "title": "App Development",
+    "desc": "Marketing repurpose success tech sapien maximus design.",
+    "image": "/assets/images/inner/service-thumb4.png"
+  }  
+]

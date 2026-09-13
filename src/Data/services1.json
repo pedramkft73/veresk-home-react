@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "/assets/images/service1.png",
+    "title": "Web Development",
+    "desc": "Marketing repurpose success in professions whereas in services sapien maximus design.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "icon": "/assets/images/service2.png",
+    "title": "IT Management",
+    "desc": "Marketing repurpose success in professions whereas in services sapien maximus design.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "icon": "/assets/images/service3.png",
+    "title": "Digital Marketing",
+    "desc": "Marketing repurpose success in professions whereas in services sapien maximus design.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "icon": "/assets/images/service4.png",
+    "title": "App Development",
+    "desc": "Marketing repurpose success in professions whereas in services sapien maximus design.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  } 
+]

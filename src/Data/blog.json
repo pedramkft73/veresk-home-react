@@ -1,0 +1,32 @@
+[
+  {
+    "img": "/assets/images/inner/blog-grid1.png",  
+    "title": "Supervisor Disapproved Of Latest Work.",
+    "category": "UI/UX DESIGNER"
+  },
+  {
+    "img": "/assets/images/inner/blog-grid2.png",  
+    "title": "Simplify Streamline Succeed IT Solutions",
+    "category": "WEB DEVELOPER"
+  },
+  {
+    "img": "/assets/images/inner/blog-grid3.png",  
+    "title": "Unlocking Potential Through Technology",
+    "category": "WEB DESIGNER"
+  },
+  {
+    "img": "/assets/images/inner/blog-grid4.png",  
+    "title": "Balancing AI Innovation with Ethical Standards",
+    "category": "UI/UX DESIGNER"
+  },
+  {
+    "img": "/assets/images/inner/blog-grid5.png",  
+    "title": "UX/UI Designing the Future Web Design",
+    "category": "WEB DEVELOPER"
+  },
+  {
+    "img": "/assets/images/inner/blog-grid6.png",  
+    "title": "Your Business Safe & Ensure High Handiness",
+    "category": "WEB DESIGNER"
+  }  
+]
