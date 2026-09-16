@@ -8954,6 +8954,57 @@ z-index: 999;
   z-index: 1;
 }
 
+.home-page .hero-area .hero-contant h5 {
+  width: fit-content;
+  max-width: none;
+  color: #ff3c00;
+  white-space: nowrap;
+}
+
+.home-page .hero-area .hero-contant h5::before {
+  background: #ff3c00;
+}
+
+.home-page .hero-secondary-cta {
+  display: inline-block;
+  margin-left: 34px;
+  vertical-align: middle;
+}
+
+.home-page .hero-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-page .hero-secondary-link i {
+  color: #ff3c00;
+  font-size: 17px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.home-page .hero-secondary-link:hover,
+.home-page .hero-secondary-link:focus-visible {
+  color: #fff;
+  text-decoration: none;
+  transform: translateX(2px);
+}
+
+.home-page .hero-secondary-link:hover i,
+.home-page .hero-secondary-link:focus-visible i {
+  transform: translateX(4px);
+}
+
 @media (min-width: 992px) {
   .home-page .hero-area > .container,
   .home-page .hero-area .row.hero,
@@ -8963,6 +9014,13 @@ z-index: 999;
 
   .home-page .hero-contant {
     max-width: 520px;
+  }
+
+  .home-page .hero-contant h1 {
+    max-width: none;
+    font-size: clamp(52px, 5.2vw, 58px);
+    line-height: 1.15;
+    white-space: nowrap;
   }
 
   .home-page .hero-thumb {
@@ -9011,9 +9069,26 @@ z-index: 999;
   }
 
   .home-page .hero-contant h1 {
-    max-width: 520px;
-    font-size: 48px;
-    line-height: 60px;
+    max-width: none;
+    font-size: 60px;
+    line-height: 1.15;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page .hero-secondary-cta {
+    display: block;
+    margin-top: 24px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-page .hero-area .hero-contant h5 {
+    width: fit-content;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: normal;
   }
 }
 

@@ -121,7 +121,11 @@
 
 /* Home 1 Hero: preserve the approved Solutek orange treatment in WordPress. */
 #veresk-react-home .home-page .hero-area .hero-contant h5 {
+  width: fit-content;
+  max-width: none;
   color: #ff3c00;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 #veresk-react-home .home-page .hero-area .hero-contant h5::before {
@@ -150,14 +154,33 @@
   color: #ff3c00;
 }
 
-#veresk-react-home .home-page .hero-area .hero-video-icon a,
-#veresk-react-home .home-page .hero-area .hero-video-icon a span {
+#veresk-react-home .home-page .hero-area .hero-secondary-link,
+#veresk-react-home .home-page .hero-area .hero-secondary-link span {
+  background: transparent;
   color: #ffffff;
+  text-decoration: none;
 }
 
-#veresk-react-home .home-page .hero-area .hero-video-icon a i {
-  background: #ff3c00;
-  color: #ffffff;
+#veresk-react-home .home-page .hero-area .hero-secondary-link i {
+  background: transparent;
+  color: #ff3c00;
+}
+
+@media (min-width: 992px) {
+  #veresk-react-home .home-page .hero-area .hero-contant h1 {
+    max-width: none;
+    font-size: clamp(52px, 5.2vw, 60px);
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 360px) {
+  #veresk-react-home .home-page .hero-area .hero-contant h5 {
+    font-size: 12px;
+    line-height: 20px;
+    white-space: normal;
+  }
 }
 
 #veresk-react-home .home-page h3.blog-title a:hover,

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import parse from 'html-react-parser';
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 
-const Hero1 = ({ bgImg, SubTitle, Title, Content, BtnText, BtnLink, Image, VideoText }) => {
+const Hero1 = ({ bgImg, SubTitle, Title, Content, BtnText, BtnLink, Image, SecondaryText, SecondaryLink }) => {
     useEffect(() => {
         loadBackgroudImages();
     }, []);
@@ -25,9 +25,10 @@ const Hero1 = ({ bgImg, SubTitle, Title, Content, BtnText, BtnLink, Image, Video
                                     <div className="solutek-hover-btn hover-bx4"></div>
                                 </a>
                             </div>
-                            <div className="hero-video-icon">
-                                <a className="video-vemo-icon venobox vbox-item" href="https://veresk.com.au/online-tools/">
-                                    <i className="bi bi-arrow-up-right" aria-hidden="true"></i><span>{VideoText}</span>
+                            <div className="hero-secondary-cta">
+                                <a className="hero-secondary-link" href={SecondaryLink}>
+                                    <span>{SecondaryText}</span>
+                                    <i className="bi bi-arrow-right" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>

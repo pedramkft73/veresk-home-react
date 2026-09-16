@@ -14,13 +14,14 @@ const Home = () => {
         <div className="home-page">
             <Hero1
                 bgImg="/assets/images/veresk-harbour-bridge.jpg"
-                SubTitle="ENGINEERING • DIGITAL TOOLS • TECHNICAL SOLUTIONS"
-                Title="Engineering Smarter Solutions"
+                SubTitle="ENGINEERING • DIGITAL TOOLS • AI"
+                Title="Engineering Smarter<br>Solutions"
                 Content="Practical engineering, digital tools and technical solutions designed to solve real-world challenges."
                 BtnText="Explore Our Services"
                 BtnLink="https://veresk.com.au/services/"
                 Image="/assets/images/veresk-engineer.png"
-                VideoText="Explore Engineering Tools"
+                SecondaryText="Explore Engineering Tools"
+                SecondaryLink="https://veresk.com.au/online-tools/"
             />
             <Features />
             <About1
