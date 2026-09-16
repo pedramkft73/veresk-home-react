@@ -5,7 +5,6 @@ import Brand from "../Components/Brand/Brand";
 import Contact1 from "../Components/Contact/Contact1";
 import Faq from "../Components/Faq/Faq";
 import Features from "../Components/Features/Features";
-import Pricing from "../Components/Pricing/Pricing";
 import Project1 from "../Components/Project/Project1";
 import Services1 from "../Components/Services/Services1";
 import Testimonial1 from "../Components/Testimonial/Testimonial1";
@@ -14,38 +13,38 @@ const Home = () => {
     return (
         <div className="home-page">
             <Hero1
-                bgImg="/assets/images/hero-bg.png"
-                SubTitle="SOLUTEK IT SERVICES"
-                Title="The Beauty Behind<br>IT Services."
-                Content="Where your interests international networks intersect provid custom software solutions for any value software."
-                BtnText="EXPLORE MORE"
-                BtnLink="/about"
-                Image="/assets/images/hero-thumb.png"
-                VideoText="WATCH VIDEO"
+                bgImg="/assets/images/veresk-harbour-bridge.jpg"
+                SubTitle="ENGINEERING • DIGITAL TOOLS • TECHNICAL SOLUTIONS"
+                Title="Engineering Smarter Solutions"
+                Content="Practical engineering, digital tools and technical solutions designed to solve real-world challenges."
+                BtnText="Explore Our Services"
+                BtnLink="/service"
+                Image="/assets/images/veresk-engineer.png"
+                VideoText="Explore Engineering Tools"
             ></Hero1>
             <Features></Features>
             <About1
-                MainImg="/assets/images/about-thumb.png"
-                ImgTitle="BEST IT SOLUTION"
-                SubTitle="SOLUTEK COMPANY"
-                Title="Essential IT Solutions For<br> Modern <span>Businesses.</span>"
-                Content="Monotonectally repurpose maintainable infrastruct whereas solutek in fermentum quis tempo sapien maximus design."
-                listTitle="Cloud Based Solution"
-                BottomText="Monotonectally repurpose maintainable infrastruct whereas solutek in fermentum quis tempo sapien maximus design."
-                BtnUrl="/about"
-                BtnText="EXPLORE MORE"
+                MainImg="/assets/images/ai-powered-engineering.jpg"
+                ImgTitle="AI-POWERED ENGINEERING"
+                SubTitle="AI-POWERED ENGINEERING"
+                Title="Smarter Engineering Through AI"
+                Content="We develop practical engineering tools powered by AI to simplify calculations, improve workflows and support faster technical decisions."
+                listTitle="Engineering Intelligence, Built for Real Workflows"
+                BottomText="From design calculations and system selection to project coordination, analysis and technical review."
+                BtnUrl="https://veresk.com.au/online-tools/"
+                BtnText="Explore Engineering Tools"
             ></About1>
             <Services1></Services1>
             <Project1 
                 bgImage="/assets/images/project-bg.png"
-                ClassAdd="project-area"
+                ClassAdd="project-area engineering-tools-area"
+                variant="engineering-tools"
             ></Project1>
-            <Brand></Brand>
-            <Pricing></Pricing>
-            <Faq></Faq>
+            <Brand variant="engineering"></Brand>
+            <Faq variant="engineering-guidance"></Faq>
             <Testimonial1></Testimonial1>
-            <Contact1></Contact1>
-            <Blog1></Blog1>
+            <Contact1 variant="home-inquiries"></Contact1>
+            <Blog1 variant="wordpress-insights"></Blog1>
         </div>
     );
 };

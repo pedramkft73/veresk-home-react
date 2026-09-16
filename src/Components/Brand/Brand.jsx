@@ -1,22 +1,32 @@
 import Slider from "react-slick";
 
-const Brand = () => {
+const Brand = ({ variant = "default" }) => {
 
-    const BrandImage = [
-        '/assets/images/brand-img.png',
-        '/assets/images/brand-img1.png',
-        '/assets/images/brand-img2.png',
-        '/assets/images/brand-img3.png',
-        '/assets/images/brand-img4.png'
+    const isEngineeringStrip = variant === "engineering";
+    const DefaultStandardsAndDisciplines = [
+        'ASHRAE',
+        'NCC',
+        'AIRAH',
+        'AS/NZS',
+        'MECHANICAL',
+        'ELECTRICAL',
+        'HYDRAULIC',
+        'CIVIL'
       ];
+    const StandardsAndDisciplines = isEngineeringStrip
+      ? ['MECHANICAL', 'ELECTRICAL', 'HYDRAULIC', 'CIVIL', 'NCC', 'ASHRAE', 'AIRAH', 'NFPA', 'COMPLIANCE']
+      : DefaultStandardsAndDisciplines;
 
       const settings = {
         dots: false,
         infinite: true,
-        speed: 600,
+        speed: isEngineeringStrip ? 4400 : 600,
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
+        autoplaySpeed: isEngineeringStrip ? 0 : 3000,
+        cssEase: isEngineeringStrip ? "linear" : "ease",
+        pauseOnHover: true,
         arrows: false,
         swipeToSlide: true,
         responsive: [
@@ -29,28 +39,37 @@ const Brand = () => {
           {
             breakpoint: 1199,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: isEngineeringStrip ? 3 : 2,
             }
           },{
             breakpoint: 575,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: isEngineeringStrip ? 2 : 1,
             }
           }
         ]
       };      
 
     return (
-        <div className="brand-area">
+        <div
+            className={`brand-area${isEngineeringStrip ? ' engineering-standards-strip' : ''}`}
+            aria-label={isEngineeringStrip ? "Engineering standards and disciplines" : undefined}
+            aria-labelledby={isEngineeringStrip ? undefined : "engineering-standards-title"}
+        >
             <div className="container">
+                {!isEngineeringStrip && (
+                    <h2 id="engineering-standards-title" className="brand-strip-label">
+                        Engineering Standards &amp; Disciplines
+                    </h2>
+                )}
                 <div className="row">
                     <div className="brand_list owl-carousel">
                      <Slider {...settings}> 
-                    {BrandImage.map((item, i) => ( 
+                    {StandardsAndDisciplines.map((item, i) => (
                         <div key={i} className="col-lg-12">
                             <div className="brand-box">
                                 <div className="brand-thumb">
-                                    <img src={item} alt="brand img" />
+                                    <span className="brand-standard">{item}</span>
                                 </div>
                             </div>
                         </div>

@@ -8923,3 +8923,1473 @@ z-index: 999;
   color: #fff;
 }
 
+/* Home 1 hero: shared by localhost and the WordPress production build. */
+.home-page .hero-area {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 50px 50px;
+  background-color: #17333a;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: normal;
+}
+
+.home-page .hero-area::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 51, 58, 0.9) 0%,
+    rgba(23, 51, 58, 0.8) 36%,
+    rgba(23, 51, 58, 0.58) 68%,
+    rgba(10, 89, 93, 0.66) 100%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.home-page .hero-area > .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .home-page .hero-area > .container,
+  .home-page .hero-area .row.hero,
+  .home-page .hero-area .row.hero > .col-lg-6:last-child {
+    height: 100%;
+  }
+
+  .home-page .hero-contant {
+    max-width: 520px;
+  }
+
+  .home-page .hero-thumb {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .home-page .hero-thumb img {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    max-width: 100%;
+    max-height: 83%;
+    margin-right: clamp(18px, 2.4vw, 42px);
+    object-fit: contain;
+  }
+
+  .home-page .hero-thumb::before {
+    z-index: 0;
+    top: 12%;
+    right: 0;
+    width: 78%;
+    height: 75%;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.42;
+    filter: saturate(0.6) brightness(0.82);
+    transform-origin: 50% 50%;
+    animation-duration: 24s;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-page .hero-area .row.hero > .col-lg-6:first-child {
+    flex: 0 0 46%;
+    max-width: 46%;
+  }
+
+  .home-page .hero-area .row.hero > .col-lg-6:last-child {
+    flex: 0 0 54%;
+    max-width: 54%;
+  }
+
+  .home-page .hero-contant h1 {
+    max-width: 520px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+/* Home 1 feature cards: retain the Solutek interaction in the Veresk palette. */
+.home-page .feature-sinble-single-box {
+  transition: 0.5s;
+}
+
+.home-page .feature-sinble-single-box::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  z-index: -1;
+  background: #0e6f73;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  right: 0;
+  bottom: 0;
+  transform: perspective(500px) rotateX(-90deg);
+  opacity: 0;
+}
+
+.home-page .feature-sinble-single-box:hover::after {
+  transform: perspective(500px) rotateX(0deg);
+  opacity: 1;
+}
+
+.home-page .feature-icon {
+  margin: 0 auto 12px;
+}
+
+.home-page h3.feature-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 8px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.home-page p.feature-text {
+  margin: 8px 0 0;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.home-page .feature-sinble-single-box .feature-icon::before {
+  background: #0a595d;
+  transition: 0.5s;
+}
+
+.home-page .feature-sinble-single-box:hover {
+  border: 1px solid #0a595d;
+}
+
+.home-page .feature-sinble-single-box:hover h3.feature-title,
+.home-page .feature-sinble-single-box:hover p.feature-text {
+  color: #fff;
+}
+
+/* Home 1 AI-powered engineering section */
+.home-page .about-area .about-thumb {
+  margin-left: 0;
+  padding-right: 24px;
+}
+
+.home-page .about-area .about-thumb > img {
+  display: block;
+  width: 100%;
+  max-width: 636px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(23, 51, 58, 0.14);
+}
+
+.home-page .about-area .about-shape,
+.home-page .about-area h4.about-title {
+  display: none;
+}
+
+.home-page .about-area h5.section-sub-title,
+.home-page .about-area h1.section-main-title span {
+  color: #0e6f73;
+}
+
+.home-page .about-area h5.section-sub-title {
+  border-color: #d9e3e1;
+  background-color: #eaf5f3;
+}
+
+.home-page .about-area h5.section-sub-title::before {
+  background: #0e6f73;
+}
+
+.home-page .about-area h1.section-main-title,
+.home-page .about-area .about-tiltle h3 {
+  color: #17333a;
+}
+
+.home-page .about-area p.section-title-descr,
+.home-page .about-area .about-text p {
+  color: #42565b;
+}
+
+.home-page .about-area .about-icon {
+  background-color: #eaf5f3;
+}
+
+.home-page .about-area .about-tiltle h3 {
+  max-width: 470px;
+  padding: 12px 0;
+  line-height: 28px;
+}
+
+.home-page .about-area .about-text p {
+  padding: 12px 0 34px;
+}
+
+.home-page .about-area .solutek-btn a {
+  background: #0e6f73;
+  color: #fff;
+}
+
+.home-page .about-area .solutek-hover-btn {
+  background-color: #0a595d;
+}
+
+.home-page .about-area .solutek-btn a:hover {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .home-page .about-area h1.section-main-title {
+    max-width: 560px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-page .about-area .about-thumb {
+    padding-right: 0;
+  }
+}
+
+/* Home 1 engineering capabilities cards */
+.home-page .sservice-area {
+  background: #f8f7f3;
+}
+
+.home-page .sservice-area h5.section-sub-title {
+  border-color: #d9e3e1;
+  background-color: #eaf5f3;
+  color: #0e6f73;
+}
+
+.home-page .sservice-area h5.section-sub-title::before {
+  background: #0e6f73;
+}
+
+.home-page .sservice-area h1.section-main-title {
+  color: #17333a;
+}
+
+.home-page .service-single-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #d9e3e1;
+  isolation: isolate;
+}
+
+.home-page .service-single-box::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #0e6f73;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+  transition: 0.4s;
+}
+
+.home-page .service-single-box:hover::before {
+  clip-path: polygon(
+    25% -70%,
+    75% -70%,
+    120% 50%,
+    75% 170%,
+    25% 170%,
+    -20% 50%
+  );
+}
+
+.home-page .service-icon,
+.home-page .service-content {
+  position: relative;
+  z-index: 1;
+}
+
+.home-page .service-icon {
+  margin-bottom: 33px;
+}
+
+.home-page h3.service-title {
+  min-height: 56px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.home-page p.service-text {
+  margin: 0;
+  padding: 12px 0 32px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.home-page .service-btn i {
+  background: #eaf5f3;
+  color: #0e6f73;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.home-page .service-single-box:hover .service-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.home-page .service-single-box:hover h3.service-title,
+.home-page .service-single-box:hover p.service-text {
+  color: #fff;
+}
+
+.home-page .service-single-box:hover .service-btn i {
+  background: #0a595d;
+  color: #fff;
+}
+
+/* Interactive Home 1 UI should not present an editable-text caret. */
+.home-page .feature-sinble-single-box,
+.home-page .service-single-box {
+  cursor: pointer;
+}
+
+.home-page .feature-icon,
+.home-page h3.feature-title,
+.home-page .service-icon,
+.home-page h3.service-title,
+.home-page .service-btn a,
+.home-page .solutek-btn a,
+.home-page .cs_slider_arrow,
+.home-page a.project-cta,
+.home-page .engineering-standards-strip .brand-standard,
+.home-page .accordion li > a {
+  cursor: pointer;
+  user-select: none;
+}
+
+.home-page .feature-sinble-single-box p,
+.home-page .service-single-box p {
+  cursor: default;
+  user-select: text;
+}
+
+/* Home 1 engineering tools carousel */
+.home-page .engineering-tools-area {
+  padding: 112px 0 40px;
+  background-color: #f6f3ee;
+  background-image: radial-gradient(circle at 12% 14%, rgba(217, 106, 73, 0.08), transparent 34%) !important;
+  background-position: center;
+  background-size: auto;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.home-page .engineering-tools-area .row.project {
+  padding-right: clamp(24px, 9vw, 180px);
+  padding-left: clamp(24px, 9vw, 180px);
+}
+
+.home-page .project-area h5.section-sub-title {
+  border-color: rgba(205, 100, 69, 0.2);
+  background-color: rgba(248, 235, 229, 0.88);
+  color: #b8583b;
+}
+
+.home-page .project-area h5.section-sub-title::before {
+  background: #d46a49;
+}
+
+.home-page .project-area h1.section-main-title {
+  color: #17333a;
+  font-size: clamp(36px, 2.35vw, 45px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.home-page .engineering-tools-area h1.section-main-title span {
+  color: #cf6545;
+}
+
+.home-page .project-right::before {
+  background: rgba(74, 91, 94, 0.16);
+}
+
+.home-page .project-single-box {
+  overflow: hidden;
+  border: 1px solid rgba(31, 62, 70, 0.1);
+  border-radius: 20px;
+  background: #183d42;
+  box-shadow: 0 10px 28px rgba(31, 49, 54, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.home-page .project-single-box:hover {
+  border-color: rgba(207, 101, 69, 0.28);
+  box-shadow: 0 18px 40px rgba(31, 49, 54, 0.15);
+  transform: translateY(-5px);
+}
+
+.home-page .project-thumb {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #eef0ed;
+}
+
+.home-page .project-thumb::before {
+  content: none;
+}
+
+.home-page .project-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.home-page .project-single-box:hover .project-thumb img {
+  transform: scale(1.025);
+}
+
+.home-page .project-content {
+  min-height: 224px;
+  padding: 27px 23px 29px;
+  background: #183d42;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.055);
+}
+
+.home-page h3.project-title a,
+.home-page h3.project-title > span {
+  display: inline-block;
+  color: #fffdf9;
+  min-height: 56px;
+  margin-bottom: 12px;
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.home-page .project-single-box:hover h3.project-title a,
+.home-page .project-single-box:hover h3.project-title > span,
+.home-page h3.project-title a:hover {
+  color: #f08a69;
+}
+
+.home-page p.project-description {
+  min-height: 72px;
+  margin: 0 0 18px;
+  color: rgba(250, 248, 242, 0.78);
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.home-page p.project-text {
+  padding: 6px 14px;
+  border: 1px solid rgba(240, 138, 105, 0.26);
+  background: rgba(240, 138, 105, 0.09);
+  color: #f3ad96;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: default;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.home-page p.project-text::before {
+  content: none;
+}
+
+.home-page .project-single-box:hover p.project-text {
+  border-color: rgba(240, 138, 105, 0.42);
+  background: rgba(240, 138, 105, 0.14);
+  color: #ffd3c5;
+  transform: translateY(-1px);
+}
+
+.home-page .project-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 19px;
+  border: 1px solid rgba(240, 138, 105, 0.3);
+  border-radius: 10px;
+  background: rgba(240, 138, 105, 0.09);
+  color: #f4b39e;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.home-page a.project-cta--live:hover,
+.home-page a.project-cta--live:focus-visible {
+  border-color: #d66c4c;
+  background: #d66c4c;
+  color: #fff;
+  box-shadow: 0 7px 16px rgba(157, 69, 43, 0.2);
+  transform: translateY(-2px);
+}
+
+.home-page a.project-cta--preview {
+  border-color: rgba(188, 208, 203, 0.34);
+  background: rgba(234, 245, 243, 0.08);
+  color: #d9ebe7;
+}
+
+.home-page a.project-cta--preview:hover,
+.home-page a.project-cta--preview:focus-visible {
+  border-color: rgba(240, 138, 105, 0.42);
+  background: rgba(240, 138, 105, 0.16);
+  color: #ffd4c6;
+  box-shadow: 0 6px 14px rgba(20, 39, 44, 0.16);
+  transform: translateY(-2px);
+}
+
+.home-page .project-cta--development {
+  border-color: rgba(225, 216, 207, 0.22);
+  background: rgba(255, 255, 255, 0.055);
+  color: rgba(250, 248, 242, 0.68);
+  cursor: default;
+}
+
+.home-page .project-single-box:hover .project-cta--development {
+  border-color: rgba(225, 216, 207, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 253, 249, 0.78);
+}
+
+.home-page .cs_slider_arrows.cs_style_2 .cs_slider_arrow {
+  background: #29464d;
+  box-shadow: 0 7px 18px rgba(31, 62, 70, 0.13);
+}
+
+.home-page .cs_slider_arrows.cs_style_2 .cs_slider_arrow:hover {
+  background: #cf6545;
+}
+
+/* Standards and disciplines strip below the tools carousel */
+.home-page .project-area + .engineering-standards-strip {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-height: 78px;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 0 0 28px 28px;
+  background: #d96a49;
+  box-shadow: 0 10px 24px rgba(104, 55, 40, 0.12);
+}
+
+.home-page .engineering-standards-strip .brand-strip-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 0 0 4px;
+  color: rgba(255, 255, 255, 0.82);
+  font-family: "Poppins";
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home-page .engineering-standards-strip .brand-strip-label::before,
+.home-page .engineering-standards-strip .brand-strip-label::after {
+  content: none;
+}
+
+.home-page .engineering-standards-strip .brand-standard {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 28px;
+  padding: 4px 14px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  box-shadow: none;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.home-page .engineering-standards-strip .brand-standard::before {
+  content: none;
+}
+
+.home-page .engineering-standards-strip .brand-standard:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.home-page .engineering-standards-strip .brand-standard:hover::before {
+  content: none;
+}
+
+.home-page .engineering-standards-strip .brand-box {
+  position: relative;
+}
+
+.home-page .engineering-standards-strip .brand-box::after {
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  width: auto;
+  height: auto;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.48);
+  content: "•";
+  font-size: 11px;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 1200px) {
+  .home-page .engineering-tools-area h1.section-main-title {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-page .engineering-tools-area {
+    padding-top: 82px;
+  }
+
+  .home-page .project-area + .engineering-standards-strip {
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+
+  .home-page .engineering-standards-strip .brand-standard {
+    min-width: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
+  }
+
+  .home-page .project-content {
+    min-height: 0;
+  }
+
+  .home-page p.project-description {
+    min-height: 0;
+  }
+
+  .home-page .project-thumb {
+    height: 220px;
+  }
+}
+
+/* Home 1 FAQ content keeps the original Solutek composition and typography. */
+.home-page .engineering-guidance-area {
+  background-color: #fff;
+}
+
+.home-page .engineering-guidance-area h5.section-sub-title,
+.home-page .engineering-guidance-area h1.section-main-title span,
+.home-page .engineering-guidance-area h3.faq-title span {
+  color: #ff3c00;
+}
+
+.home-page .engineering-guidance-area h5.section-sub-title::before,
+.home-page .engineering-guidance-area .accordion a::before,
+.home-page .engineering-guidance-area .accordion a::after {
+  background: #c9694a;
+}
+
+.home-page .engineering-guidance-area .accordion li a {
+  border: 1px solid rgba(23, 51, 58, 0.08);
+  background: #faf9f6;
+  box-shadow: 0 4px 14px rgba(42, 58, 61, 0.035);
+}
+
+.home-page .engineering-guidance-area .accordion li p {
+  border: 1px solid rgba(23, 51, 58, 0.08);
+  border-top: 0;
+  background: #faf9f6;
+  box-shadow: 0 8px 18px rgba(42, 58, 61, 0.045);
+}
+
+.home-page .engineering-guidance-area .cs_accordian.active a {
+  background: #faf9f6 !important;
+  border-bottom-color: transparent;
+}
+
+.home-page .engineering-guidance-area .faq-shape {
+  opacity: 0.025;
+  filter: brightness(0) saturate(0);
+}
+
+.home-page .engineering-guidance-area .faq-shape2 {
+  opacity: 0.38;
+}
+
+.home-page .engineering-guidance-area .faq-thumb img {
+  width: 517px;
+  max-width: 100%;
+  height: 356px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+/* Home 1 testimonials: original Solutek carousel and assets in the approved Veresk treatment. */
+.home-page .veresk-testimonial-area {
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: calc(100% - clamp(30px, 5vw, 100px));
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 110px 0 112px;
+  overflow: hidden;
+  border-radius: 0;
+  background: #070b21;
+}
+
+.home-page .veresk-testimonial-area::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: url(/assets/images/home-3/test-bg.png) center / cover no-repeat;
+  content: "";
+  filter: invert(1);
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.home-page .veresk-testimonial-area > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-page .veresk-testimonial-area .section-title.text-center {
+  margin-bottom: 52px;
+}
+
+.home-page .veresk-testimonial-area h5.section-sub-title {
+  margin-bottom: 20px;
+  padding: 5px 27px;
+  border-color: rgba(201, 105, 74, 0.34);
+  background-color: rgba(24, 28, 48, 0.76);
+  color: #c9694a;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.home-page .veresk-testimonial-area h5.section-sub-title::before {
+  top: 13px;
+  background: #c9694a;
+}
+
+.home-page .veresk-testimonial-area h1.section-main-title {
+  color: #fff;
+  font-size: clamp(46px, 3vw, 52px);
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+}
+
+.home-page .veresk-testimonial-area h1.section-main-title span {
+  color: #c9694a;
+}
+
+.home-page .veresk-testimonial-area .slick-list {
+  padding-top: 8px;
+  padding-bottom: 18px;
+  margin-bottom: -18px;
+}
+
+.home-page .veresk-testimonial-area .slick-track {
+  display: flex;
+}
+
+.home-page .veresk-testimonial-area .slick-slide {
+  height: auto;
+}
+
+.home-page .veresk-testimonial-area .slick-slide > div,
+.home-page .veresk-testimonial-area .slick-slide .col-lg-12,
+.home-page .veresk-testimonial-area .testi-box {
+  height: 100%;
+}
+
+.home-page .veresk-testimonial-area .testi-box,
+.home-page .veresk-testimonial-area .testi-single-box,
+.home-page .veresk-testimonial-area .testi-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page .veresk-testimonial-area .testi-single-box {
+  flex: 1;
+  min-height: 430px;
+  margin-bottom: 0;
+  padding: 38px 32px 34px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 22px;
+  background: #171b30;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+  text-align: left;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.home-page .veresk-testimonial-area .testi-single-box:hover {
+  border-color: rgba(201, 105, 74, 0.3);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.24);
+  transform: translateY(-5px);
+}
+
+.home-page .veresk-testimonial-area .testi-icon {
+  text-align: center;
+}
+
+.home-page .veresk-testimonial-area .testi-icon img {
+  width: 49px;
+  height: auto;
+  opacity: 0.92;
+}
+
+.home-page .veresk-testimonial-area .testi-content,
+.home-page .veresk-testimonial-area p.testi-text {
+  flex: 1;
+}
+
+.home-page .veresk-testimonial-area p.testi-text {
+  padding: 30px 0 27px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.home-page .veresk-testimonial-area p.testi-text::before {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.home-page .veresk-testimonial-area .testi-client {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.home-page .veresk-testimonial-area .testi-author {
+  flex: 0 0 68px;
+  text-align: left;
+}
+
+.home-page .veresk-testimonial-area .testi-author::before,
+.home-page .veresk-testimonial-area .testi-author::after {
+  content: none;
+}
+
+.home-page .veresk-testimonial-area .testi-author img {
+  display: block;
+  width: 68px;
+  height: 68px;
+  border: 2px solid rgba(201, 105, 74, 0.52);
+  border-radius: 50%;
+  object-fit: cover;
+  transition:
+    border-color 0.3s ease,
+    filter 0.3s ease;
+}
+
+.home-page .veresk-testimonial-area .testi-single-box:hover .testi-author img {
+  border-color: rgba(201, 105, 74, 0.82);
+  filter: brightness(1.04);
+}
+
+.home-page .veresk-testimonial-area .testi-client-meta {
+  min-width: 0;
+}
+
+.home-page .veresk-testimonial-area h3.testi-title {
+  color: #fff;
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.home-page .veresk-testimonial-area .testi-role {
+  display: block;
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+@media (max-width: 1199px) {
+  .home-page .veresk-testimonial-area {
+    padding-top: 92px;
+    padding-bottom: 94px;
+  }
+
+  .home-page .veresk-testimonial-area h1.section-main-title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page .veresk-testimonial-area {
+    width: calc(100% - 28px);
+    padding-top: 72px;
+    padding-bottom: 74px;
+    border-radius: 0;
+  }
+
+  .home-page .veresk-testimonial-area .section-title.text-center {
+    margin-bottom: 38px;
+  }
+
+  .home-page .veresk-testimonial-area h1.section-main-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .home-page .veresk-testimonial-area .testi-single-box {
+    min-height: 0;
+    padding: 32px 26px 30px;
+  }
+
+  .home-page .veresk-testimonial-area p.testi-text {
+    font-size: 16px;
+    line-height: 1.68;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-page .veresk-testimonial-area h1.section-main-title {
+    font-size: 32px;
+  }
+
+  .home-page .veresk-testimonial-area h5.section-sub-title {
+    font-size: 13px;
+  }
+
+  .home-page .veresk-testimonial-area .testi-single-box {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+}
+
+/* Home 1 contact section using the server-rendered WordPress Inquiries form. */
+.home-page .veresk-contact-area {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-height: clamp(640px, 42.708vw, 820px);
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0;
+  background-color: #f8f7f3;
+  background-image: url("https://veresk.com.au/wp-content/uploads/2026/09/Contact-us-home-page-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-page .veresk-contact-area > .container {
+  width: 100%;
+  max-width: 1820px;
+  min-height: inherit;
+  padding-right: clamp(36px, 4.6vw, 88px);
+  padding-left: clamp(36px, 4.6vw, 88px);
+}
+
+/* Original Solutek Contact1 rotating Play control. */
+.home-page .veresk-contact-cta {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  padding: 62px 0;
+}
+
+.home-page .veresk-contact-cta::before {
+  position: absolute;
+  top: 33%;
+  left: -20%;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/images/contact-shape.png) center no-repeat;
+  content: "";
+  animation: rotateme 15s linear infinite;
+  transform-origin: center;
+}
+
+.home-page .veresk-contact-cta .contact-video-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 83%;
+  right: auto;
+  left: 30%;
+  width: 52px;
+  height: auto;
+  color: #c9694a;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: center;
+  white-space: normal;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: filter 0.25s ease;
+}
+
+.home-page .veresk-contact-cta .contact-video-icon span:hover {
+  filter: brightness(1.12);
+}
+
+.home-page .veresk-contact-content {
+  width: min(47%, 760px);
+  padding: 42px 0 44px;
+}
+
+.home-page .veresk-contact-area .section-title.text-left {
+  margin-bottom: 18px;
+}
+
+.home-page .veresk-contact-area h5.section-sub-title {
+  margin-bottom: 12px;
+  border-color: rgba(201, 105, 74, 0.2);
+  background: rgba(255, 255, 255, 0.58);
+  color: #c9694a;
+}
+
+.home-page .veresk-contact-area h5.section-sub-title::before {
+  background: #c9694a;
+}
+
+.home-page .veresk-contact-area h1.section-main-title {
+  max-width: 650px;
+  color: #17333a;
+  font-size: clamp(34px, 2.35vw, 44px);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.home-page .veresk-contact-intro {
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: #42565b;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.home-page .veresk-inquiries-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+  margin: 0;
+}
+
+.home-page .veresk-inquiries-form .gb-form-field {
+  min-width: 0;
+  margin: 0;
+}
+
+.home-page .veresk-inquiries-form .veresk-form-field--full,
+.home-page .veresk-inquiries-form > button,
+.home-page .veresk-inquiries-form > .gb-form-message,
+.home-page .veresk-inquiries-form > noscript {
+  grid-column: 1 / -1;
+}
+
+.home-page .veresk-inquiries-form .gb-form-field-label {
+  display: block;
+  margin: 0 0 4px;
+  color: #17333a;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.home-page .veresk-inquiries-form .gb-form-field__required {
+  color: #c9694a;
+}
+
+.home-page .veresk-inquiries-form .gb-form-field-control {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 46px;
+  margin: 0;
+  padding: 9px 15px;
+  border: 1px solid rgba(115, 130, 132, 0.3);
+  border-radius: 11px;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.76);
+  color: #17333a;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 24px;
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.home-page .veresk-inquiries-form textarea.gb-form-field-control {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.home-page .veresk-inquiries-form .gb-form-field-control:focus {
+  border-color: #c9694a;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0 0 3px rgba(201, 105, 74, 0.12);
+}
+
+.home-page .veresk-inquiries-form > button[type="submit"] {
+  justify-self: start;
+  min-height: 46px;
+  margin-top: 2px;
+  padding: 10px 28px;
+  border: 0;
+  border-radius: 26px;
+  background: #c9694a;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.home-page .veresk-inquiries-form > button[type="submit"]:hover,
+.home-page .veresk-inquiries-form > button[type="submit"]:focus-visible {
+  background: #aa543b;
+  box-shadow: 0 9px 20px rgba(169, 83, 58, 0.22);
+  transform: translateY(-2px);
+}
+
+.home-page .veresk-inquiries-form .gb-form-message {
+  margin: 0;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (max-width: 1199px) {
+  .home-page .veresk-contact-area {
+    min-height: 620px;
+    background-position: 56% center;
+  }
+
+  .home-page .veresk-contact-content {
+    width: 50%;
+    padding-top: 38px;
+    padding-bottom: 40px;
+  }
+
+  .home-page .veresk-contact-area h1.section-main-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-page .veresk-contact-area {
+    min-height: 0;
+    background-image: none;
+  }
+
+  .home-page .veresk-contact-area::after {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    background-image: url("https://veresk.com.au/wp-content/uploads/2026/09/Contact-us-home-page-1.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    content: "";
+  }
+
+  .home-page .veresk-contact-area > .container {
+    min-height: 0;
+    padding-right: clamp(28px, 7vw, 64px);
+    padding-left: clamp(28px, 7vw, 64px);
+  }
+
+  .home-page .veresk-contact-content {
+    width: 100%;
+    max-width: 720px;
+    padding: 64px 0;
+  }
+
+  .home-page .veresk-contact-cta {
+    top: auto;
+    bottom: calc(43.75vw - 124px);
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page .veresk-contact-area {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .home-page .veresk-contact-area > .container {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .home-page .veresk-contact-content {
+    padding: 52px 0 48px;
+  }
+
+  .home-page .veresk-contact-area h1.section-main-title {
+    font-size: 32px;
+  }
+
+  .home-page .veresk-contact-intro {
+    font-size: 16px;
+  }
+
+  .home-page .veresk-inquiries-form {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .veresk-inquiries-form .gb-form-field,
+  .home-page .veresk-inquiries-form > button,
+  .home-page .veresk-inquiries-form > .gb-form-message,
+  .home-page .veresk-inquiries-form > noscript {
+    grid-column: 1;
+  }
+
+  .home-page .veresk-contact-area::after {
+    aspect-ratio: 4 / 3;
+  }
+
+.home-page .veresk-contact-cta {
+    bottom: calc(75vw - 124px);
+  }
+}
+
+
+/* Home 1 WordPress posts rendered through the original Solutek Blog1 card system. */
+.home-page .veresk-insights-area {
+  position: relative;
+  padding: 120px 0 89px;
+  background: #f4f4f4;
+}
+
+.home-page .veresk-insights-area h5.section-sub-title {
+  border-color: rgba(201, 105, 74, 0.2);
+  background: rgba(255, 255, 255, 0.72);
+  color: #c9694a;
+}
+
+.home-page .veresk-insights-area h5.section-sub-title::before {
+  background: #c9694a;
+}
+
+.home-page .veresk-insights-area h1.section-main-title span {
+  color: #c9694a;
+}
+
+.home-page .veresk-insights-area h1.section-main-title {
+  color: #17333a;
+}
+
+.home-page .veresk-insights-area .project-right::before {
+  background: rgba(23, 51, 58, 0.12);
+}
+
+.home-page .veresk-insights-area .project-right .solutek-btn a {
+  background: #c9694a;
+}
+
+.home-page .veresk-insights-area .project-right .solutek-hover-btn {
+  background: #17333a;
+}
+
+.home-page .veresk-insights-posts .blog-singele-box,
+.home-page .veresk-insights-posts .blog-singele-box-tow {
+  overflow: hidden;
+  background: #fff;
+}
+
+.home-page .veresk-insights-posts .blog-singele-box {
+  border-radius: 30px;
+}
+
+.home-page .veresk-insights-posts .blog-singele-box-tow {
+  border-radius: 20px;
+}
+
+.home-page .veresk-insights-posts .blog-thumb {
+  aspect-ratio: 549 / 369;
+  overflow: hidden;
+  background: #e8eceb;
+}
+
+.home-page .veresk-insights-posts .blog-thumb > a,
+.home-page .veresk-insights-posts .blog-thumb-tow > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.home-page .veresk-insights-posts .blog-thumb img,
+.home-page .veresk-insights-posts .blog-thumb-tow img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-page .veresk-insights-posts .blog-date {
+  background: #c9694a;
+}
+
+.home-page .veresk-insights-posts .blog-date h4 span::before {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.home-page .veresk-insights-posts .blog-date-tow {
+  background: #f7f5f0;
+}
+
+.home-page .veresk-insights-posts .blog-date-tow h4 i {
+  color: #c9694a;
+}
+
+.home-page .veresk-insights-posts .blog-date-tow h4 span::before {
+  background: #c9694a;
+}
+
+.home-page .veresk-insights-posts h3.blog-title a,
+.home-page .veresk-insights-posts h3.blog-title-two a {
+  color: #17333a;
+}
+
+.home-page .veresk-insights-posts h3.blog-title a:hover,
+.home-page .veresk-insights-posts h3.blog-title a:focus-visible,
+.home-page .veresk-insights-posts h3.blog-title-two a:hover,
+.home-page .veresk-insights-posts h3.blog-title-two a:focus-visible,
+.home-page .veresk-insights-posts .blog-btn a:hover,
+.home-page .veresk-insights-posts .blog-btn a:focus-visible,
+.home-page .veresk-insights-posts .blog-btn-tow a:hover,
+.home-page .veresk-insights-posts .blog-btn-tow a:focus-visible {
+  color: #c9694a;
+}
+
+.home-page .veresk-insights-posts p.blog-tex,
+.home-page .veresk-insights-posts p.blog-tex-tow,
+.home-page .veresk-insights-posts .blog-btn a,
+.home-page .veresk-insights-posts .blog-btn-tow a {
+  color: #42565b;
+}
+
+.home-page .veresk-insights-status {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  color: #42565b;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .home-page .veresk-insights-posts .blog-thumb-tow {
+    float: left;
+    width: 301px;
+    height: 312px;
+    margin-right: 29px;
+  }
+
+  .home-page .veresk-insights-posts .blog-content-tow {
+    min-height: 312px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .home-page .veresk-insights-area {
+    padding-top: 90px;
+    padding-bottom: 86px;
+  }
+
+  .home-page .veresk-insights-posts .blog-thumb-tow {
+    float: none;
+    width: 100%;
+    height: 230px;
+    margin-right: 0;
+  }
+
+  .home-page .veresk-insights-posts .blog-content-tow {
+    margin-top: 0;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page .veresk-insights-area {
+    padding-top: 72px;
+    padding-bottom: 70px;
+  }
+}

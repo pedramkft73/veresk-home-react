@@ -10,8 +10,8 @@ const Services1 = () => {
                         <div className="col-lg-12">
                             <div className="section-title text-center">
                                 <SectionTitle
-                                    SubTitle="SOLUTEK COMPANY"
-                                    Title="How Professional IT Services<br> Can Drive <span>Success.</span>"
+                                    SubTitle="ENGINEERING CAPABILITIES"
+                                    Title="Engineering Support Across the Project Lifecycle"
                                 ></SectionTitle>
                             </div>
                         </div>

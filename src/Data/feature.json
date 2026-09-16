@@ -1,27 +1,27 @@
 [
   {
     "img": "/assets/images/feature1.png",   
-    "title": "Data Security",
-    "desc": "Monotonectally solutek in fermentum quis"
+    "title": "Engineering Design",
+    "desc": "Practical, compliant engineering solutions"
   },
   {
     "img": "/assets/images/feature2.png",   
-    "title": "Digital Marketing",
-    "desc": "Monotonectally solutek in fermentum quis"
+    "title": "Digital Engineering Tools",
+    "desc": "Smarter tools for faster technical decisions"
   },
   {
     "img": "/assets/images/feature3.png",   
-    "title": "IT Consultation",
-    "desc": "Monotonectally solutek in fermentum quis"
+    "title": "AI & Engineering Intelligence",
+    "desc": "AI-assisted workflows, automation and technical insight"
   },
   {
     "img": "/assets/images/feature4.png",   
-    "title": "Cloud Services",
-    "desc": "Monotonectally solutek in fermentum quis"
+    "title": "Building Services",
+    "desc": "HVAC, ventilation and mechanical systems"
   },  
   {
     "img": "/assets/images/feature5.png",   
-    "title": "Technology",
-    "desc": "Monotonectally solutek in fermentum quis"
+    "title": "Project Delivery",
+    "desc": "From concept through coordination and commissioning"
   }   
 ]

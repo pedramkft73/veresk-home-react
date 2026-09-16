@@ -1,0 +1,198 @@
+/* GeneratePress makes descendant Bootstrap containers opaque. */
+#veresk-react-home .container,
+#veresk-react-home .container-fluid {
+  background-color: transparent;
+}
+
+/*
+ * Home 1 colour system.
+ *
+ * Keep these overrides behind both integration boundaries so the palette
+ * cannot leak into the WordPress chrome or the other Solutek home variants.
+ */
+#veresk-react-home .home-page {
+  --veresk-primary-ink: #17333a;
+  --veresk-teal: #0e6f73;
+  --veresk-teal-hover: #0a595d;
+  --veresk-body-text: #42565b;
+  --veresk-light-aqua: #eaf5f3;
+  --veresk-off-white: #f8f7f3;
+  --veresk-border: #d9e3e1;
+  color: var(--veresk-body-text);
+}
+
+/* Typography and neutral surfaces */
+#veresk-react-home .home-page h1.section-main-title,
+#veresk-react-home .home-page h3.feature-title,
+#veresk-react-home .home-page .about-tiltle h3,
+#veresk-react-home .home-page h3.service-title,
+#veresk-react-home .home-page h3.priching-title,
+#veresk-react-home .home-page h3.faq-title,
+#veresk-react-home .home-page h3.blog-title a,
+#veresk-react-home .home-page h3.blog-title-two a {
+  color: var(--veresk-primary-ink);
+}
+
+#veresk-react-home .home-page p.feature-text,
+#veresk-react-home .home-page p.section-title-descr,
+#veresk-react-home .home-page p.section-descr,
+#veresk-react-home .home-page .about-text p,
+#veresk-react-home .home-page p.service-text,
+#veresk-react-home .home-page ul.pricing-list,
+#veresk-react-home .home-page p.faq-description,
+#veresk-react-home .home-page .accordion p,
+#veresk-react-home .home-page p.blog-tex,
+#veresk-react-home .home-page .blog-date-tow h4,
+#veresk-react-home .home-page .blog-btn a,
+#veresk-react-home .home-page .blog-btn-tow a,
+#veresk-react-home .home-page .form_box input,
+#veresk-react-home .home-page .form_box textarea {
+  color: var(--veresk-body-text);
+}
+
+#veresk-react-home .home-page .feature-sinble-single-box,
+#veresk-react-home .home-page .sservice-area,
+#veresk-react-home .home-page .faq-area,
+#veresk-react-home .home-page .blog-area,
+#veresk-react-home .home-page .about-icon,
+#veresk-react-home .home-page .service-btn i,
+#veresk-react-home .home-page .blog-date-tow {
+  background-color: var(--veresk-off-white);
+}
+
+#veresk-react-home .home-page .feature-sinble-single-box,
+#veresk-react-home .home-page .form_box input,
+#veresk-react-home .home-page .form_box textarea,
+#veresk-react-home .home-page h5.section-sub-title {
+  border-color: var(--veresk-border);
+}
+
+/* Labels and decorative accents */
+#veresk-react-home .home-page .hero-contant h5,
+#veresk-react-home .home-page h5.section-sub-title,
+#veresk-react-home .home-page h1.section-main-title span,
+#veresk-react-home .home-page .contact-video-icon span,
+#veresk-react-home .home-page h1.priching-doller,
+#veresk-react-home .home-page ul.pricing-list li i,
+#veresk-react-home .home-page h3.faq-title span,
+#veresk-react-home .home-page h3.testi-title span,
+#veresk-react-home .home-page .blog-date-tow h4 i {
+  color: var(--veresk-teal);
+}
+
+#veresk-react-home .home-page h5.section-sub-title {
+  background-color: var(--veresk-light-aqua);
+}
+
+#veresk-react-home .home-page .hero-contant h5::before,
+#veresk-react-home .home-page .hero-video-icon span i,
+#veresk-react-home .home-page h5.section-sub-title::before,
+#veresk-react-home .home-page .blog-date,
+#veresk-react-home .home-page .blog-date-tow h4 span::before {
+  background: var(--veresk-teal);
+}
+
+#veresk-react-home .home-page p.section-descr::before,
+#veresk-react-home .home-page .blog-date h4 span::before {
+  background: var(--veresk-border);
+}
+
+/* Buttons and interactive links */
+#veresk-react-home .home-page .solutek-btn a,
+#veresk-react-home .home-page .quote_button button {
+  background: var(--veresk-teal);
+  color: #fff;
+}
+
+#veresk-react-home .home-page .solutek-hover-btn,
+#veresk-react-home .home-page .hero-area .solutek-hover-btn,
+#veresk-react-home .home-page .pricing-area .solutek-hover-btn {
+  background-color: var(--veresk-teal-hover);
+}
+
+#veresk-react-home .home-page .solutek-btn a:hover,
+#veresk-react-home .home-page .quote_button button:hover {
+  color: #fff;
+}
+
+#veresk-react-home .home-page .quote_button button:hover {
+  background: var(--veresk-teal-hover);
+}
+
+#veresk-react-home .home-page h3.blog-title a:hover,
+#veresk-react-home .home-page h3.blog-title-two a:hover,
+#veresk-react-home .home-page .blog-btn a:hover,
+#veresk-react-home .home-page .blog-btn-tow a:hover {
+  color: var(--veresk-teal-hover);
+}
+
+#veresk-react-home .home-page .form_box input:focus,
+#veresk-react-home .home-page .form_box textarea:focus {
+  border-color: var(--veresk-teal);
+  box-shadow: 0 0 4px rgba(14, 111, 115, 0.5);
+}
+
+/* Service card states */
+#veresk-react-home .home-page .service-btn i {
+  color: var(--veresk-teal);
+}
+
+#veresk-react-home .home-page .service-single-box:hover .service-btn i {
+  background: var(--veresk-teal-hover);
+  color: #fff;
+}
+
+/* Pricing and FAQ selected states */
+#veresk-react-home .home-page .pricing-head {
+  background: var(--veresk-light-aqua);
+}
+
+#veresk-react-home .home-page .pricing-area .solutek-btn a {
+  background: var(--veresk-light-aqua);
+  color: var(--veresk-teal);
+}
+
+#veresk-react-home .home-page .pricing-area .solutek-btn a:hover {
+  color: #fff;
+}
+
+#veresk-react-home .home-page .accordion a::before,
+#veresk-react-home .home-page .accordion a::after,
+#veresk-react-home .home-page .accordion a.active::after {
+  background: var(--veresk-teal);
+}
+
+#veresk-react-home .home-page .accordion a {
+  color: var(--veresk-primary-ink);
+}
+
+/* Testimonial cards keep their original Solutek structure and Veresk-adapted navy. */
+#veresk-react-home .home-page .testi-single-box {
+  background-color: #171b30;
+  border-color: rgba(255, 255, 255, 0.075);
+}
+
+/* Keep only the Home 1 FAQ colour substitutions in WordPress. */
+#veresk-react-home .home-page .engineering-guidance-area {
+  background-color: #fff;
+}
+
+#veresk-react-home .home-page .engineering-guidance-area h5.section-sub-title {
+  border-color: rgba(122, 122, 122, 0.15);
+  background-color: rgba(201, 105, 74, 0.03);
+  color: #c9694a;
+}
+
+#veresk-react-home .home-page .engineering-guidance-area h5.section-sub-title::before {
+  background: #c9694a;
+}
+
+#veresk-react-home .home-page .engineering-guidance-area h1.section-main-title span,
+#veresk-react-home .home-page .engineering-guidance-area h3.faq-title span {
+  color: #c9694a;
+}
+
+#veresk-react-home .home-page .engineering-guidance-area .accordion a::before,
+#veresk-react-home .home-page .engineering-guidance-area .accordion a::after {
+  background: #c9694a;
+}

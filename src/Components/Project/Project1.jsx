@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 import SectionTitle from "../Common/SectionTitle";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 
-const Project1 = ({bgImage,ClassAdd}) => {
+const Project1 = ({bgImage,ClassAdd,variant = "default"}) => {
 
     const sliderRef = useRef(null);
+    const isEngineeringTools = variant === "engineering-tools";
 
     const next = () => {
       sliderRef.current.slickNext();
@@ -25,11 +26,13 @@ const Project1 = ({bgImage,ClassAdd}) => {
         dots: false,
         infinite: true,
         speed: 600,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
         autoplay: true,
+        autoplaySpeed: isEngineeringTools ? 4200 : 3000,
+        pauseOnHover: true,
         responsive: [
           {
             breakpoint: 1399,
@@ -55,15 +58,15 @@ const Project1 = ({bgImage,ClassAdd}) => {
         <div className={ClassAdd} data-background={bgImage}>
             <div className="container-fluid">
                 <div className="row project align-items-center">
-                    <div className="col-lg-6">
+                    <div className={isEngineeringTools ? "col-xl-9 col-lg-10" : "col-lg-6"}>
                         <div className="section-title text-left">
                             <SectionTitle
-                                    SubTitle="SOLUTEK PROJECT"
-                                    Title="Explore Our Recent <span>Projects.</span>"
+                                    SubTitle="WHAT WE'RE BUILDING"
+                                    Title={isEngineeringTools ? "Engineering Tools &amp; <span>Digital Solutions</span>" : "Engineering Tools & Digital Solutions"}
                             ></SectionTitle>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className={isEngineeringTools ? "col-xl-3 col-lg-2" : "col-lg-6"}>
                         <div className="project-right">
                         <div className="cs_slider_arrows cs_style_2 testtimonial_arow_area cs_hide_md">
                             <div className="cs_left_arrow cs_slider_arrow cs_center" onClick={previous}>
@@ -101,11 +104,26 @@ const Project1 = ({bgImage,ClassAdd}) => {
                             <div key={i} className="col-lg-12 col-md-12">
                                 <div className="project-single-box">
                                     <div className="project-thumb">
-                                        <img src={item.img} alt="project1" />
+                                        <img src={item.img} alt={item.title} />
                                     </div>
                                     <div className="project-content">
-                                        <h3 className="project-title"><Link to="/project/project-details">{item.title}</Link></h3>
-                                        <p className="project-text">{item.desc}</p>
+                                        <h3 className="project-title">
+                                            {isEngineeringTools ? <span>{item.title}</span> : <Link to="/project/project-details">{item.title}</Link>}
+                                        </h3>
+                                        <p className="project-description">{item.desc}</p>
+                                        {isEngineeringTools ? (
+                                            item.link ? (
+                                                <a className={`project-cta project-cta--${item.ctaType}`} href={item.link}>
+                                                    {item.cta}
+                                                </a>
+                                            ) : (
+                                                <span className={`project-cta project-cta--${item.ctaType}`}>
+                                                    {item.cta}
+                                                </span>
+                                            )
+                                        ) : (
+                                            <p className="project-text">{item.tag}</p>
+                                        )}
                                     </div>
                                 </div>
                             </div>
