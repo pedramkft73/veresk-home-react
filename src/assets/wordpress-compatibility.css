@@ -1,4 +1,4 @@
-/* GeneratePress makes descendant Bootstrap containers opaque. */
+﻿/* GeneratePress makes descendant Bootstrap containers opaque. */
 #veresk-react-home .container,
 #veresk-react-home .container-fluid {
   background-color: transparent;
@@ -22,7 +22,7 @@
 }
 
 /* Typography and neutral surfaces */
-#veresk-react-home .home-page h1.section-main-title,
+#veresk-react-home .home-page :is(h1,h2).section-main-title,
 #veresk-react-home .home-page h3.feature-title,
 #veresk-react-home .home-page .about-tiltle h3,
 #veresk-react-home .home-page h3.service-title,
@@ -63,14 +63,14 @@
 #veresk-react-home .home-page .feature-sinble-single-box,
 #veresk-react-home .home-page .form_box input,
 #veresk-react-home .home-page .form_box textarea,
-#veresk-react-home .home-page h5.section-sub-title {
+#veresk-react-home .home-page :is(h5,p).section-sub-title {
   border-color: var(--veresk-border);
 }
 
 /* Labels and decorative accents */
 #veresk-react-home .home-page .hero-contant h5,
-#veresk-react-home .home-page h5.section-sub-title,
-#veresk-react-home .home-page h1.section-main-title span,
+#veresk-react-home .home-page :is(h5,p).section-sub-title,
+#veresk-react-home .home-page :is(h1,h2).section-main-title span,
 #veresk-react-home .home-page .contact-video-icon span,
 #veresk-react-home .home-page h1.priching-doller,
 #veresk-react-home .home-page ul.pricing-list li i,
@@ -80,13 +80,13 @@
   color: var(--veresk-teal);
 }
 
-#veresk-react-home .home-page h5.section-sub-title {
+#veresk-react-home .home-page :is(h5,p).section-sub-title {
   background-color: var(--veresk-light-aqua);
 }
 
 #veresk-react-home .home-page .hero-contant h5::before,
 #veresk-react-home .home-page .hero-video-icon span i,
-#veresk-react-home .home-page h5.section-sub-title::before,
+#veresk-react-home .home-page :is(h5,p).section-sub-title::before,
 #veresk-react-home .home-page .blog-date,
 #veresk-react-home .home-page .blog-date-tow h4 span::before {
   background: var(--veresk-teal);
@@ -117,6 +117,47 @@
 
 #veresk-react-home .home-page .quote_button button:hover {
   background: var(--veresk-teal-hover);
+}
+
+/* Home 1 Hero: preserve the approved Solutek orange treatment in WordPress. */
+#veresk-react-home .home-page .hero-area .hero-contant h5 {
+  color: #ff3c00;
+}
+
+#veresk-react-home .home-page .hero-area .hero-contant h5::before {
+  background: #ff3c00;
+}
+
+#veresk-react-home .home-page .hero-area .hero-contant h1 {
+  color: #ffffff;
+}
+
+#veresk-react-home .home-page .hero-area .hero-contant p {
+  color: rgba(255, 255, 255, 0.78);
+  opacity: 1;
+}
+
+#veresk-react-home .home-page .hero-area .solutek-btn a {
+  background: #ff3c00;
+  color: #ffffff;
+}
+
+#veresk-react-home .home-page .hero-area .solutek-hover-btn {
+  background-color: #ffffff;
+}
+
+#veresk-react-home .home-page .hero-area .solutek-btn a:hover {
+  color: #ff3c00;
+}
+
+#veresk-react-home .home-page .hero-area .hero-video-icon a,
+#veresk-react-home .home-page .hero-area .hero-video-icon a span {
+  color: #ffffff;
+}
+
+#veresk-react-home .home-page .hero-area .hero-video-icon a i {
+  background: #ff3c00;
+  color: #ffffff;
 }
 
 #veresk-react-home .home-page h3.blog-title a:hover,
@@ -177,17 +218,17 @@
   background-color: #fff;
 }
 
-#veresk-react-home .home-page .engineering-guidance-area h5.section-sub-title {
+#veresk-react-home .home-page .engineering-guidance-area :is(h5,p).section-sub-title {
   border-color: rgba(122, 122, 122, 0.15);
   background-color: rgba(201, 105, 74, 0.03);
   color: #c9694a;
 }
 
-#veresk-react-home .home-page .engineering-guidance-area h5.section-sub-title::before {
+#veresk-react-home .home-page .engineering-guidance-area :is(h5,p).section-sub-title::before {
   background: #c9694a;
 }
 
-#veresk-react-home .home-page .engineering-guidance-area h1.section-main-title span,
+#veresk-react-home .home-page .engineering-guidance-area :is(h1,h2).section-main-title span,
 #veresk-react-home .home-page .engineering-guidance-area h3.faq-title span {
   color: #c9694a;
 }
@@ -196,3 +237,4 @@
 #veresk-react-home .home-page .engineering-guidance-area .accordion a::after {
   background: #c9694a;
 }
+

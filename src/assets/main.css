@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+﻿/*--------------------------------------------------------------
 ## All CSS
 ----------------------------------------------------------------*/
 
@@ -1417,7 +1417,7 @@ p.feature-text {
   margin-bottom: 55px;
 }
 
-h5.section-sub-title {
+:is(h5,p).section-sub-title {
   font-size: 16px;
   color: #ff3c00;
   font-weight: 600;
@@ -1434,7 +1434,7 @@ h5.section-sub-title {
   line-height: 25px;
 }
 
-h5.section-sub-title::before {
+:is(h5,p).section-sub-title::before {
   position: absolute;
   content: "";
   width: 30px;
@@ -1445,7 +1445,7 @@ h5.section-sub-title::before {
   top: 14px;
 }
 
-h1.section-main-title {
+:is(h1,h2).section-main-title {
   font-size: 42px;
   line-height: 55px;
   color: #050a1e;
@@ -1454,7 +1454,7 @@ h1.section-main-title {
   margin: 0;
 }
 
-h1.section-main-title span {
+:is(h1,h2).section-main-title span {
   display: inline-block;
   color: #ff3d00;
 }
@@ -1489,16 +1489,16 @@ p.section-descr::before {
   margin-bottom: 47px;
 }
 
-.testimonial-area h1.section-main-title {
+.testimonial-area :is(h1,h2).section-main-title {
   color: #fff;
 }
 
-.testimonial-area h5.section-sub-title {
+.testimonial-area :is(h5,p).section-sub-title {
   background-color: #161a2b;
   border: 2px solid #40465d;
 }
 
-.contact-area h1.section-main-title {
+.contact-area :is(h1,h2).section-main-title {
   margin: 0;
   font-size: 28px;
   line-height: 38px;
@@ -1511,7 +1511,7 @@ p.section-descr::before {
   margin-bottom: 34px;
 }
 
-.contact-area h5.section-sub-title {
+.contact-area :is(h5,p).section-sub-title {
   margin-bottom: 14px;
   background-color: #f4f4f4;
   border: 2px solid #ffffff;
@@ -1551,7 +1551,7 @@ h6.section-sub-title::after {
   top: 12px;
 }
 
-h1.section-main-title2 {
+:is(h1,h2).section-main-title2 {
   font-size: 45px;
   line-height:55px;
   text-transform: uppercase;
@@ -1591,11 +1591,11 @@ h1.section-main-title2 {
   background-image: linear-gradient(270deg, #ff3b00 0%, #05091d 100%);
 }
 
-.case-studies-area h1.section-main-title2 {
+.case-studies-area :is(h1,h2).section-main-title2 {
   color: #fff;
 }
 
-.testimonial-area.style-four h1.section-main-title {
+.testimonial-area.style-four :is(h1,h2).section-main-title {
   color: #050a1e;
 }
 
@@ -2935,12 +2935,12 @@ ul.testi-rating li {
   margin-bottom: 49px;
 }
 
-.testimonial-area.style-two h5.section-sub-title {
+.testimonial-area.style-two :is(h5,p).section-sub-title {
   background-color: #f4f4f4;
   border: 2px solid rgba(255, 60, 0, 0.15);
 }
 
-.testimonial-area.style-two h1.section-main-title {
+.testimonial-area.style-two :is(h1,h2).section-main-title {
   color: #050a1e;
 }
 
@@ -3099,12 +3099,12 @@ ul.testi-rating li {
   margin: 0;
 }
 
-.testimonial-area.style-three h5.section-sub-title {
+.testimonial-area.style-three :is(h5,p).section-sub-title {
   background-color: transparent;
   border: 2px solid #eeeeee;
 }
 
-.testimonial-area.style-three h1.section-main-title {
+.testimonial-area.style-three :is(h1,h2).section-main-title {
   color: #050a1e;
 }
 
@@ -4267,7 +4267,7 @@ ul.list-style-one li a:hover {
   background-size: cover;
 }
 
-.about-area.style-two h5.section-sub-title {
+.about-area.style-two :is(h5,p).section-sub-title {
   margin-left: 18px;
 }
 
@@ -4550,7 +4550,7 @@ ul.list-style-one li a:hover {
   margin: 0 240px;
 }
 
-.project-area.styl-two h5.section-sub-title {
+.project-area.styl-two :is(h5,p).section-sub-title {
   margin-left: 18px;
   background-color: #161a2b;
   border: 2px solid #40465d;
@@ -4564,7 +4564,7 @@ ul.list-style-one li a:hover {
   margin: 0 29px;
 }
 
-.project-area.styl-two h1.section-main-title {
+.project-area.styl-two :is(h1,h2).section-main-title {
   color: #fff;
 }
 
@@ -4833,7 +4833,7 @@ ul.list-style-one li a:hover {
   border-radius: 10px 10px 0px 10px;
 }
 
-.project-area.style-three h5.section-sub-title {
+.project-area.style-three :is(h5,p).section-sub-title {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid #ffffff;
   margin-left: 18px;
@@ -4888,7 +4888,7 @@ ul.list-style-one li a:hover {
   padding: 120px 0 90px;
 }
 
-.blog-area.style-two h5.section-sub-title {
+.blog-area.style-two :is(h5,p).section-sub-title {
   background-color: #ffffff;
   border: 2px solid #f4f4f4;
 }
@@ -9100,21 +9100,21 @@ z-index: 999;
   display: none;
 }
 
-.home-page .about-area h5.section-sub-title,
-.home-page .about-area h1.section-main-title span {
+.home-page .about-area :is(h5,p).section-sub-title,
+.home-page .about-area :is(h1,h2).section-main-title span {
   color: #0e6f73;
 }
 
-.home-page .about-area h5.section-sub-title {
+.home-page .about-area :is(h5,p).section-sub-title {
   border-color: #d9e3e1;
   background-color: #eaf5f3;
 }
 
-.home-page .about-area h5.section-sub-title::before {
+.home-page .about-area :is(h5,p).section-sub-title::before {
   background: #0e6f73;
 }
 
-.home-page .about-area h1.section-main-title,
+.home-page .about-area :is(h1,h2).section-main-title,
 .home-page .about-area .about-tiltle h3 {
   color: #17333a;
 }
@@ -9152,7 +9152,7 @@ z-index: 999;
 }
 
 @media (min-width: 992px) {
-  .home-page .about-area h1.section-main-title {
+  .home-page .about-area :is(h1,h2).section-main-title {
     max-width: 560px;
     font-size: 40px;
     line-height: 52px;
@@ -9170,17 +9170,17 @@ z-index: 999;
   background: #f8f7f3;
 }
 
-.home-page .sservice-area h5.section-sub-title {
+.home-page .sservice-area :is(h5,p).section-sub-title {
   border-color: #d9e3e1;
   background-color: #eaf5f3;
   color: #0e6f73;
 }
 
-.home-page .sservice-area h5.section-sub-title::before {
+.home-page .sservice-area :is(h5,p).section-sub-title::before {
   background: #0e6f73;
 }
 
-.home-page .sservice-area h1.section-main-title {
+.home-page .sservice-area :is(h1,h2).section-main-title {
   color: #17333a;
 }
 
@@ -9305,24 +9305,24 @@ z-index: 999;
   padding-left: clamp(24px, 9vw, 180px);
 }
 
-.home-page .project-area h5.section-sub-title {
+.home-page .project-area :is(h5,p).section-sub-title {
   border-color: rgba(205, 100, 69, 0.2);
   background-color: rgba(248, 235, 229, 0.88);
   color: #b8583b;
 }
 
-.home-page .project-area h5.section-sub-title::before {
+.home-page .project-area :is(h5,p).section-sub-title::before {
   background: #d46a49;
 }
 
-.home-page .project-area h1.section-main-title {
+.home-page .project-area :is(h1,h2).section-main-title {
   color: #17333a;
   font-size: clamp(36px, 2.35vw, 45px);
   line-height: 1.15;
   letter-spacing: -0.03em;
 }
 
-.home-page .engineering-tools-area h1.section-main-title span {
+.home-page .engineering-tools-area :is(h1,h2).section-main-title span {
   color: #cf6545;
 }
 
@@ -9584,14 +9584,14 @@ z-index: 999;
   height: auto;
   background: transparent;
   color: rgba(255, 255, 255, 0.48);
-  content: "•";
+  content: "â€¢";
   font-size: 11px;
   line-height: 1;
   transform: translateY(-50%);
 }
 
 @media (min-width: 1200px) {
-  .home-page .engineering-tools-area h1.section-main-title {
+  .home-page .engineering-tools-area :is(h1,h2).section-main-title {
     white-space: nowrap;
   }
 }
@@ -9631,13 +9631,13 @@ z-index: 999;
   background-color: #fff;
 }
 
-.home-page .engineering-guidance-area h5.section-sub-title,
-.home-page .engineering-guidance-area h1.section-main-title span,
+.home-page .engineering-guidance-area :is(h5,p).section-sub-title,
+.home-page .engineering-guidance-area :is(h1,h2).section-main-title span,
 .home-page .engineering-guidance-area h3.faq-title span {
   color: #ff3c00;
 }
 
-.home-page .engineering-guidance-area h5.section-sub-title::before,
+.home-page .engineering-guidance-area :is(h5,p).section-sub-title::before,
 .home-page .engineering-guidance-area .accordion a::before,
 .home-page .engineering-guidance-area .accordion a::after {
   background: #c9694a;
@@ -9712,7 +9712,7 @@ z-index: 999;
   margin-bottom: 52px;
 }
 
-.home-page .veresk-testimonial-area h5.section-sub-title {
+.home-page .veresk-testimonial-area :is(h5,p).section-sub-title {
   margin-bottom: 20px;
   padding: 5px 27px;
   border-color: rgba(201, 105, 74, 0.34);
@@ -9723,19 +9723,19 @@ z-index: 999;
   letter-spacing: 0.04em;
 }
 
-.home-page .veresk-testimonial-area h5.section-sub-title::before {
+.home-page .veresk-testimonial-area :is(h5,p).section-sub-title::before {
   top: 13px;
   background: #c9694a;
 }
 
-.home-page .veresk-testimonial-area h1.section-main-title {
+.home-page .veresk-testimonial-area :is(h1,h2).section-main-title {
   color: #fff;
   font-size: clamp(46px, 3vw, 52px);
   line-height: 1.16;
   letter-spacing: -0.025em;
 }
 
-.home-page .veresk-testimonial-area h1.section-main-title span {
+.home-page .veresk-testimonial-area :is(h1,h2).section-main-title span {
   color: #c9694a;
 }
 
@@ -9876,7 +9876,7 @@ z-index: 999;
     padding-bottom: 94px;
   }
 
-  .home-page .veresk-testimonial-area h1.section-main-title {
+  .home-page .veresk-testimonial-area :is(h1,h2).section-main-title {
     font-size: 44px;
   }
 }
@@ -9893,7 +9893,7 @@ z-index: 999;
     margin-bottom: 38px;
   }
 
-  .home-page .veresk-testimonial-area h1.section-main-title {
+  .home-page .veresk-testimonial-area :is(h1,h2).section-main-title {
     font-size: 36px;
     line-height: 1.2;
   }
@@ -9910,11 +9910,11 @@ z-index: 999;
 }
 
 @media (max-width: 575px) {
-  .home-page .veresk-testimonial-area h1.section-main-title {
+  .home-page .veresk-testimonial-area :is(h1,h2).section-main-title {
     font-size: 32px;
   }
 
-  .home-page .veresk-testimonial-area h5.section-sub-title {
+  .home-page .veresk-testimonial-area :is(h5,p).section-sub-title {
     font-size: 13px;
   }
 
@@ -10007,18 +10007,18 @@ z-index: 999;
   margin-bottom: 18px;
 }
 
-.home-page .veresk-contact-area h5.section-sub-title {
+.home-page .veresk-contact-area :is(h5,p).section-sub-title {
   margin-bottom: 12px;
   border-color: rgba(201, 105, 74, 0.2);
   background: rgba(255, 255, 255, 0.58);
   color: #c9694a;
 }
 
-.home-page .veresk-contact-area h5.section-sub-title::before {
+.home-page .veresk-contact-area :is(h5,p).section-sub-title::before {
   background: #c9694a;
 }
 
-.home-page .veresk-contact-area h1.section-main-title {
+.home-page .veresk-contact-area :is(h1,h2).section-main-title {
   max-width: 650px;
   color: #17333a;
   font-size: clamp(34px, 2.35vw, 44px);
@@ -10144,7 +10144,7 @@ z-index: 999;
     padding-bottom: 40px;
   }
 
-  .home-page .veresk-contact-area h1.section-main-title {
+  .home-page .veresk-contact-area :is(h1,h2).section-main-title {
     font-size: 36px;
   }
 }
@@ -10201,7 +10201,7 @@ z-index: 999;
     padding: 52px 0 48px;
   }
 
-  .home-page .veresk-contact-area h1.section-main-title {
+  .home-page .veresk-contact-area :is(h1,h2).section-main-title {
     font-size: 32px;
   }
 
@@ -10237,21 +10237,21 @@ z-index: 999;
   background: #f4f4f4;
 }
 
-.home-page .veresk-insights-area h5.section-sub-title {
+.home-page .veresk-insights-area :is(h5,p).section-sub-title {
   border-color: rgba(201, 105, 74, 0.2);
   background: rgba(255, 255, 255, 0.72);
   color: #c9694a;
 }
 
-.home-page .veresk-insights-area h5.section-sub-title::before {
+.home-page .veresk-insights-area :is(h5,p).section-sub-title::before {
   background: #c9694a;
 }
 
-.home-page .veresk-insights-area h1.section-main-title span {
+.home-page .veresk-insights-area :is(h1,h2).section-main-title span {
   color: #c9694a;
 }
 
-.home-page .veresk-insights-area h1.section-main-title {
+.home-page .veresk-insights-area :is(h1,h2).section-main-title {
   color: #17333a;
 }
 
@@ -10393,3 +10393,4 @@ z-index: 999;
     padding-bottom: 70px;
   }
 }
+

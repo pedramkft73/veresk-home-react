@@ -1,0 +1,28 @@
+/* Final production accessibility/performance safeguards. Visual design intentionally unchanged. */
+#veresk-react-home .home-page :focus-visible {
+  outline: 3px solid #a85f16;
+  outline-offset: 3px;
+}
+
+#veresk-react-home .home-page .hero-eyebrow {
+  margin: 0;
+}
+
+#veresk-react-home .home-page .cs_slider_arrow[role="button"] {
+  cursor: pointer;
+}
+
+#veresk-react-home .home-page img {
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #veresk-react-home .home-page *,
+  #veresk-react-home .home-page *::before,
+  #veresk-react-home .home-page *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

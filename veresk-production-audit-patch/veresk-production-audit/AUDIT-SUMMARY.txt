@@ -1,0 +1,68 @@
+VERESK HOMEPAGE — FINAL PRODUCTION AUDIT SUMMARY
+================================================
+
+Audited source branch:
+veresk-home-redesign
+Commit reviewed:
+2d2c7c88f68a2ffc3f86bbf0e9cea29664684134
+
+High-impact fixes included in this patch
+----------------------------------------
+1. SEO heading hierarchy
+   - Hero remains the only visual H1 in React.
+   - Reusable section headings become H2.
+   - Existing visual styles are preserved by safely broadening the CSS selectors during finalization.
+
+2. JavaScript / bundle performance
+   - WordPress homepage now renders Home directly.
+   - The full demo React Router and Home 2/Home 3 routes are dynamically imported only outside the WordPress homepage.
+   - This prevents the entire demo-site route tree from being part of the homepage's initial execution path.
+
+3. Crawlability / AI discoverability
+   - WordPress template contains meaningful server-rendered fallback content before React starts.
+   - Crawlers that do not execute JavaScript can still understand the company, capabilities, AI tools, engineering guidance, latest posts and contact intent.
+   - Latest WordPress post titles are server-rendered as fallback links.
+
+4. Rank Math / metadata
+   - Homepage title, description and canonical are explicitly defined through Rank Math filters when Rank Math is active.
+   - When Rank Math is absent, standard title/description/canonical/Open Graph fallbacks are output.
+
+5. Structured data / AI entity clarity
+   - Existing Rank Math Organization schema is enriched instead of blindly duplicated.
+   - Adds factual Sydney area served, contact details and engineering topics.
+   - Does NOT add fake reviews, ratings, clients or FAQ rich-result markup.
+
+6. Core Web Vitals safeguards
+   - Hero background is preloaded as the likely LCP image.
+   - Foreground hero engineer image receives high fetch priority.
+   - Non-critical content images use lazy loading/async decoding where changed.
+   - Reduced-motion preference is respected for continuous sliders/animations.
+
+7. Accessibility
+   - Slider arrows become keyboard operable with roles, labels and Enter/Space handling.
+   - FAQ controls expose expanded state and answer relationships.
+   - Decorative icons/shapes use empty alt text.
+   - Global focus-visible treatment is added within the React homepage only.
+
+8. Broken/demo navigation cleanup
+   - Hero service CTA points to the real /services/ WordPress page.
+   - Engineering capability links point to real Veresk Services/Online Tools pages rather than Solutek demo routes.
+   - The unrelated Solutek YouTube video interaction in the hero is removed; Explore Engineering Tools links to the real Online Tools page.
+
+9. WordPress integration
+   - Native GeneratePress header/footer remain outside React.
+   - GenerateBlocks Pro Inquiries form remains server-rendered and uses existing GenerateBlocks submission/security endpoints.
+   - React CSS remains scoped under #veresk-react-home.
+
+10. Dynamic WordPress blog
+   - Existing implementation already retrieves latest 3 posts, featured images, real dates, categories and post URLs from WP REST API.
+   - No fake comment counts are used on the WordPress homepage variant.
+
+Deployment-level checks still required after upload
+---------------------------------------------------
+These depend on the live WordPress/server configuration, not the React bundle:
+- confirm Inquiries email delivery with one real submission;
+- verify Rank Math sitemap/index status;
+- verify robots.txt does not block OAI-SearchBot or Googlebot;
+- purge WP Rocket/CDN caches;
+- inspect final live Core Web Vitals after cache warm-up.

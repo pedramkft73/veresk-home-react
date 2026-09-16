@@ -1,4 +1,4 @@
-
+﻿
 /* Normal desktop :1400px. */
 @media (min-width: 1400px) and (max-width: 1600px) {
 .solutek_nav_manu {
@@ -108,7 +108,7 @@
     top: 0px;
 }
 
-.project-area.style-two h1.section-main-title {
+.project-area.style-two :is(h1,h2).section-main-title {
     font-size: 40px;
 }
 
@@ -144,7 +144,7 @@ h3.service-title {
     font-size: 20px;
 }
 
-.project-area h1.section-main-title {
+.project-area :is(h1,h2).section-main-title {
     font-size: 38px;
 }
 
@@ -312,7 +312,7 @@ h3.blog-title a {
 .counter-area .counter-thumb {
     display: none;
 }
-.testimonial-area.style-four h1.section-main-title {
+.testimonial-area.style-four :is(h1,h2).section-main-title {
     font-size: 36px;
     line-height: 48px;
 }
@@ -585,7 +585,7 @@ h3.service-title {
     line-height: 30px;
 }
 
-.project-area.styl-two h1.section-main-title {
+.project-area.styl-two :is(h1,h2).section-main-title {
     font-size: 40px;
 }
 
@@ -678,7 +678,7 @@ h3.service-title {
     width: 100%;
 }
 
-.testimonial-area.style-four h1.section-main-title {
+.testimonial-area.style-four :is(h1,h2).section-main-title {
     font-size: 36px;
     line-height: 48px;
 }
@@ -858,7 +858,7 @@ h4.about-title {
     left: 7%;
     bottom: 14%;
 }
-h1.section-main-title {
+:is(h1,h2).section-main-title {
     font-size: 36px;
 }
 
@@ -931,7 +931,7 @@ ul.pricing-list li i {
     margin: 0;
 }
 
-.contact-area h1.section-main-title {
+.contact-area :is(h1,h2).section-main-title {
     font-size: 24px;
 }
 
@@ -1059,7 +1059,7 @@ h3.blog-title a {
     margin: 0 50px;
 }
 
-.project-area.styl-two h1.section-main-title {
+.project-area.styl-two :is(h1,h2).section-main-title {
     font-size: 34px;
 }
 
@@ -1240,7 +1240,7 @@ h3.blog-title a {
     margin-right: 30px;
 }
 
-.testimonial-area.style-four h1.section-main-title {
+.testimonial-area.style-four :is(h1,h2).section-main-title {
     font-size: 30px;
     line-height: 40px;
 }
@@ -1280,7 +1280,7 @@ h3.blog-title a {
     top: 13%;
 }
 
-.faq-area.style-two h1.section-main-title {
+.faq-area.style-two :is(h1,h2).section-main-title {
     font-size: 34px;
 }
 
@@ -1619,7 +1619,7 @@ ul.nav_scroll li a i {
     left: 6px;
 }
 
-.contact-area h1.section-main-title {
+.contact-area :is(h1,h2).section-main-title {
     font-size: 17px;
 }
 
@@ -2150,7 +2150,7 @@ ul.nav_scroll li a i {
     margin-top: 30px;
 }
 
-h1.section-main-title {
+:is(h1,h2).section-main-title {
     font-size: 40px;
 }
 
@@ -2171,7 +2171,7 @@ p.section-title-descr {
     left: 3%;
 }
 
-.sservice-area h1.section-main-title {
+.sservice-area :is(h1,h2).section-main-title {
     font-size: 35px;
 }
 
@@ -2179,7 +2179,7 @@ p.section-title-descr {
     padding: 0 30px 0;
 }
 
-.project-area h1.section-main-title {
+.project-area :is(h1,h2).section-main-title {
     font-size: 36px;
 }
 
@@ -2205,7 +2205,7 @@ p.section-title-descr {
     background: transparent;
 }
 
-.contact-area h1.section-main-title {
+.contact-area :is(h1,h2).section-main-title {
     font-size: 26px;
 }
 
@@ -2303,7 +2303,7 @@ p.section-title-descr {
     margin-left: 20px;
 }
 
-.service-area.style-two h1.section-main-title {
+.service-area.style-two :is(h1,h2).section-main-title {
     font-size: 33px;
 }
 
@@ -2332,7 +2332,7 @@ p.section-title-descr {
     margin-top: 100px;
 }
 
-.about-area.style-two h1.section-main-title {
+.about-area.style-two :is(h1,h2).section-main-title {
     font-size: 35px;
 }
 
@@ -2399,7 +2399,7 @@ p.section-title-descr {
     display: none;
 }
 
-.blog-area.style-two h1.section-main-title {
+.blog-area.style-two :is(h1,h2).section-main-title {
     font-size: 32px;
 }
 
@@ -2471,7 +2471,7 @@ p.section-title-descr {
     margin-bottom: 30px;
 }
 
-.case-studies-area h1.section-main-title2 {
+.case-studies-area :is(h1,h2).section-main-title2 {
     font-size: 36px;
 }
 
@@ -2525,7 +2525,7 @@ p.section-title-descr {
     margin-bottom: 2px;
 }
 
-.working-proces-area h1.section-main-title2 {
+.working-proces-area :is(h1,h2).section-main-title2 {
     font-size: 42px;
 }
 
@@ -2548,7 +2548,7 @@ p.section-title-descr {
     text-align: left;
 }
 
-.faq-area.style-two h1.section-main-title {
+.faq-area.style-two :is(h1,h2).section-main-title {
     font-size: 38px;
 }
 
@@ -2556,7 +2556,7 @@ p.section-title-descr {
     right: 0;
 }
 
-.blog-area.style-two h1.section-main-title2 {
+.blog-area.style-two :is(h1,h2).section-main-title2 {
     font-size: 42px;
 }
 
@@ -2858,7 +2858,7 @@ h4.about-title {
     margin: 30px 0 0 10px;
 }
 
-h1.section-main-title {
+:is(h1,h2).section-main-title {
     font-size: 35px;
 }
 
@@ -2879,7 +2879,7 @@ h1.section-main-title {
     display: none;
 }
 
-.sservice-area h1.section-main-title {
+.sservice-area :is(h1,h2).section-main-title {
     font-size: 30px;
 }
 
@@ -2887,7 +2887,7 @@ h1.section-main-title {
     padding: 0 20px 0;
 }
 
-.project-area h1.section-main-title {
+.project-area :is(h1,h2).section-main-title {
     font-size: 28px;
 }
 
@@ -2935,7 +2935,7 @@ h1.section-main-title {
     margin-left: 10px;
 }
 
-.contact-area h1.section-main-title {
+.contact-area :is(h1,h2).section-main-title {
     font-size: 22px;
 }
 
@@ -3051,7 +3051,7 @@ p.newsletter-text {
     margin-left: 15px;
 }
 
-.service-area.style-two h1.section-main-title {
+.service-area.style-two :is(h1,h2).section-main-title {
     font-size: 30px;
 }
 
@@ -3092,7 +3092,7 @@ p.newsletter-text {
     margin-left: 0;
 }
 
-.team-area.style-two h1.section-main-title {
+.team-area.style-two :is(h1,h2).section-main-title {
     font-size: 30px;
 }
 
@@ -3217,7 +3217,7 @@ p.newsletter-text {
     padding: 110px 0 110px;
 }
 
-.our-service-section h1.section-main-title2 {
+.our-service-section :is(h1,h2).section-main-title2 {
     font-size: 36px;
 }
 
@@ -3253,7 +3253,7 @@ p.newsletter-text {
     margin-bottom: 30px;
 }
 
-.case-studies-area h1.section-main-title2 {
+.case-studies-area :is(h1,h2).section-main-title2 {
     font-size: 34px;
 }
 
@@ -3303,7 +3303,7 @@ p.newsletter-text {
     width: 150px;
 }
 
-h1.section-main-title2 {
+:is(h1,h2).section-main-title2 {
     font-size: 36px;
 }
 
@@ -3325,7 +3325,7 @@ h1.section-main-title2 {
     font-size: 15px;
 }
 
-.faq-area.style-two h1.section-main-title {
+.faq-area.style-two :is(h1,h2).section-main-title {
     font-size: 34px;
 }
 
@@ -3388,7 +3388,7 @@ h1.section-main-title2 {
     left: -70%;
 }
 
-.team-area.style-inner h1.section-main-title {
+.team-area.style-inner :is(h1,h2).section-main-title {
     font-size: 32px;
 }
 
@@ -3417,7 +3417,7 @@ h1.section-main-title2 {
     margin: 0 0 30px;
 }
 
-.testimonial-area.style-three h1.section-main-title {
+.testimonial-area.style-three :is(h1,h2).section-main-title {
     font-size: 32px;
 }
 
@@ -3663,7 +3663,7 @@ h3.blog-details-title.two {
     margin-left: 10px;
 }
 
-h1.section-main-title {
+:is(h1,h2).section-main-title {
     font-size: 22px;
     line-height: 35px;
 }
@@ -3688,7 +3688,7 @@ p.section-title-descr {
     display: none;
 }
 
-.sservice-area h1.section-main-title {
+.sservice-area :is(h1,h2).section-main-title {
     font-size: 20px;
     line-height: 35px;
 }
@@ -3783,7 +3783,7 @@ p.testi-text {
     background: none;
 }
 
-.contact-area h1.section-main-title {
+.contact-area :is(h1,h2).section-main-title {
     font-size: 15px;
     line-height: 25px;
 }
@@ -3920,7 +3920,7 @@ h3.blog-title-two a {
     margin-left: 20px;
 }
 
-.service-area.style-two h1.section-main-title {
+.service-area.style-two :is(h1,h2).section-main-title {
     font-size: 19px;
     line-height: 35px;
 }
@@ -3959,7 +3959,7 @@ h3.blog-title-two a {
     margin-top: 30px;
 }
 
-.team-area.style-two h1.section-main-title {
+.team-area.style-two :is(h1,h2).section-main-title {
     font-size: 20px;
     line-height: 35px;
 }
@@ -4111,7 +4111,7 @@ h3.blog-title-two a {
     margin-bottom: 30px;
 }
 
-.case-studies-area h1.section-main-title2 {
+.case-studies-area :is(h1,h2).section-main-title2 {
     font-size: 40px;
 }
 
@@ -4186,7 +4186,7 @@ h3.blog-title-two a {
     display: none;
 }
 
-.working-proces-area h1.section-main-title2 {
+.working-proces-area :is(h1,h2).section-main-title2 {
     font-size: 24px;
 }
 
@@ -4208,7 +4208,7 @@ h3.blog-title-two a {
     right: 0;
 }
 
-.blog-area.style-two h1.section-main-title2 {
+.blog-area.style-two :is(h1,h2).section-main-title2 {
     font-size: 36px;
 }
 
@@ -4542,6 +4542,7 @@ h3.blog-details-title.two {
         height: inherit;
     }
   }
+
 
 
 

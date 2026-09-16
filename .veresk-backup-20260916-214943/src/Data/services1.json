@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "/assets/images/service1.png",
+    "title": "Design & Analysis",
+    "desc": "Engineering calculations, system design, equipment selection and technical coordination.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "icon": "/assets/images/service2.png",
+    "title": "AI & Digital Engineering",
+    "desc": "AI-assisted tools, automation and digital workflows for faster technical decisions.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "icon": "/assets/images/service3.png",
+    "title": "Technical Review & Optimisation",
+    "desc": "Independent review, performance improvement and practical engineering recommendations.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "icon": "/assets/images/service4.png",
+    "title": "Delivery & Commissioning",
+    "desc": "Technical coordination, testing, commissioning and support through project handover.",   
+    "btnText": "READ MORE",
+    "btnLink": "/service/service-details"
+  } 
+]
