@@ -14,6 +14,8 @@ const Services1 = () => {
                             />
                         </div>
                     </div>
+                </div>
+                <div className="row engineering-capabilities-rail" role="region" tabIndex="0" aria-label="Engineering capability cards">
                     {data.map((item, i) => (
                         <div key={i} className="col-xl-3 col-lg-4 col-md-6">
                             <div className="service-single-box">

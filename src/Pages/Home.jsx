@@ -26,7 +26,6 @@ const Home = () => {
             <Features />
             <About1
                 MainImg="/assets/images/ai-powered-engineering.jpg"
-                ImgTitle="AI-POWERED ENGINEERING"
                 SubTitle="AI-POWERED ENGINEERING"
                 Title="Smarter Engineering Through AI"
                 Content="We develop practical engineering tools powered by AI to simplify calculations, improve workflows and support faster technical decisions."

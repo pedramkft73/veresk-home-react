@@ -11,7 +11,9 @@ const About1 = ({ MainImg, ImgTitle, SubTitle, Title, Content, listTitle, Bottom
                             <div className="about-shape" aria-hidden="true">
                                 <img src="/assets/images/about1.png" alt="" loading="lazy" decoding="async" />
                             </div>
-                            <h3 className="about-title">{ImgTitle}</h3>
+                            {ImgTitle && (
+                                <h3 className="about-title">{ImgTitle}</h3>
+                            )}
                         </div>
                     </div>
                     <div className="col-lg-6">

@@ -9339,6 +9339,136 @@ z-index: 999;
   color: #fff;
 }
 
+/* Home 1 mobile card rails: native touch scrolling with snap alignment. */
+@media (max-width: 767px) {
+  .home-page .feature-area {
+    padding-bottom: 56px;
+  }
+
+  .home-page .feature-area .row.about {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .home-page .feature-box,
+  .home-page .engineering-capabilities-rail {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 16px 12px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .home-page .feature-box::-webkit-scrollbar,
+  .home-page .engineering-capabilities-rail::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-page .feature-box:focus-visible,
+  .home-page .engineering-capabilities-rail:focus-visible {
+    outline: 2px solid rgba(14, 111, 115, 0.5);
+    outline-offset: 3px;
+  }
+
+  .home-page .feature-sinble-single-box {
+    box-sizing: border-box;
+    flex: 0 0 84vw;
+    min-height: 250px;
+    margin-bottom: 0;
+    padding: 32px 24px 28px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .home-page h3.feature-title {
+    min-height: 56px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .home-page p.feature-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .home-page .sservice-area {
+    padding-top: 72px;
+    padding-bottom: 56px;
+  }
+
+  .home-page .sservice-area .section-title.text-center {
+    margin-bottom: 32px;
+  }
+
+  .home-page .sservice-area :is(h1,h2).section-main-title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .home-page .engineering-capabilities-rail {
+    align-items: stretch;
+  }
+
+  .home-page .engineering-capabilities-rail > [class*="col-"] {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 86vw;
+    width: 86vw;
+    max-width: 86vw;
+    padding-right: 0;
+    padding-left: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .home-page .engineering-capabilities-rail .service-single-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 320px;
+    margin-bottom: 0;
+    padding: 34px 26px 32px;
+  }
+
+  .home-page .engineering-capabilities-rail .service-icon {
+    margin-bottom: 24px;
+  }
+
+  .home-page .engineering-capabilities-rail .service-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .home-page .engineering-capabilities-rail h3.service-title {
+    min-height: 56px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .home-page .engineering-capabilities-rail p.service-text {
+    padding: 10px 0 22px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .home-page .engineering-capabilities-rail .service-btn {
+    margin-top: auto;
+  }
+}
+
 /* Interactive Home 1 UI should not present an editable-text caret. */
 .home-page .feature-sinble-single-box,
 .home-page .service-single-box {

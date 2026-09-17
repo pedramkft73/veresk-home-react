@@ -5,7 +5,7 @@ const Features = () => {
         <section className="feature-area" aria-label="Engineering services overview">
             <div className="container">
                 <div className="row about align-items-center">
-                    <div className="feature-box">
+                    <div className="feature-box" role="region" tabIndex="0" aria-label="Engineering service cards">
                         {data.map((item, i) => (
                             <div key={i} className="feature-sinble-single-box">
                                 <div className="feature-icon" aria-hidden="true">
