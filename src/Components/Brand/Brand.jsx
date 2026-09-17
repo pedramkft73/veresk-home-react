@@ -32,11 +32,17 @@ const Brand = ({ variant = "default" }) => {
       arrows: false,
       swipeToSlide: true,
       accessibility: true,
-      responsive: [
-        { breakpoint: 1399, settings: { slidesToShow: 4 } },
-        { breakpoint: 1199, settings: { slidesToShow: isEngineeringStrip ? 3 : 2 } },
-        { breakpoint: 575, settings: { slidesToShow: isEngineeringStrip ? 2 : 1 } }
-      ]
+      responsive: isEngineeringStrip
+        ? [
+            { breakpoint: 1399, settings: { slidesToShow: 4 } },
+            { breakpoint: 1199, settings: { slidesToShow: 3 } },
+            { breakpoint: 992, settings: { variableWidth: true, slidesToShow: 1, slidesToScroll: 1 } }
+          ]
+        : [
+            { breakpoint: 1399, settings: { slidesToShow: 4 } },
+            { breakpoint: 1199, settings: { slidesToShow: 2 } },
+            { breakpoint: 575, settings: { slidesToShow: 1 } }
+          ]
     };
 
     return (
@@ -44,7 +50,17 @@ const Brand = ({ variant = "default" }) => {
         <div className="container">
           {!isEngineeringStrip && <h2 id="engineering-standards-title" className="brand-strip-label">Engineering Standards &amp; Disciplines</h2>}
           <div className="row"><div className="brand_list owl-carousel"><Slider {...settings}>
-            {StandardsAndDisciplines.map((item, i) => <div key={i} className="col-lg-12"><div className="brand-box"><div className="brand-thumb"><span className="brand-standard">{item}</span></div></div></div>)}
+            {StandardsAndDisciplines.map((item, i) => {
+              const standardWidth = Math.max(132, (item.length * 10) + 56);
+              const slideProps = isEngineeringStrip
+                ? {
+                    className: "brand-standard-slide",
+                    style: { width: standardWidth, "--brand-slide-width": `${standardWidth}px` },
+                  }
+                : { className: "col-lg-12" };
+
+              return <div key={i} {...slideProps}><div className="brand-box"><div className="brand-thumb"><span className="brand-standard">{item}</span></div></div></div>;
+            })}
           </Slider></div></div>
         </div>
       </section>
